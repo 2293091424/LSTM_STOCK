@@ -2,9 +2,11 @@
 基于LSTM对股票进行预测研究
 这段代码是一个使用长短期记忆网络（LSTM）来预测股票价格的Python脚本。它定义了一个名为LSTMStockPredictor的类，该类负责加载股票数据、预处理数据、构建LSTM模型、训练模型、进行预测以及评估模型性能。以下是代码的主要组成部分及其功能：
 
-导入库：代码开始部分导入了所需的Python库，包括数据处理（numpy, pandas）、数据获取（yfinance）、绘图（matplotlib）、机器学习（sklearn）和深度学习（tensorflow.keras）。
+导入库：
+代码开始部分导入了所需的Python库，包括数据处理（numpy, pandas）、数据获取（yfinance）、绘图（matplotlib）、机器学习（sklearn）和深度学习（tensorflow.keras）。
 
-类定义：LSTMStockPredictor类包含了以下方法：
+类定义：
+LSTMStockPredictor类包含了以下方法：
 __init__：初始化方法，设置股票代码、日期范围、未来预测天数等参数，并调用其他方法加载和预处理数据、分割训练测试数据集、构建模型。
 _init_logger：初始化日志记录器。
 _load_and_preprocess_data：从Yahoo Finance下载股票数据，并使用MinMaxScaler进行归一化处理。
